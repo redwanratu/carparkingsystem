@@ -16,6 +16,9 @@ exports.slotStatusHistory = catchAsync(async (req, res, next) => {
 
   
   query=req.query;
+  console.log(req.query);
+  console.log(req.params);
+  
 
   const newHistory = await History.create({
             slot_1: req.query.slot_1,
